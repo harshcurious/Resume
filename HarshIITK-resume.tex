@@ -1,0 +1,256 @@
+% !TEX TS-program = xelatex
+\documentclass[]{resume-openfont}
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[5]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\hspace*{\fill} \location{#5}}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}\\\descript{#3}\\}
+\newcommand{\projectHeadingtwo}[2]{\Project{#1}{#2}\\\descript{}}
+\newcommand{\projectHeadingNoLink}[2]{\ProjectNone{#1}\\ \descript{#2}}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{\color[HTML]{458588}Harsh Kumar}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{harshcurious.com}
+% vs how you want it to show up. If it's you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://harshcurious.com/}
+\newcommand{\yourEmail}{eharshkmr@gmail.com}
+\newcommand{\yourPhone}{}
+\newcommand{\githubUserName}{harshcurious}
+\newcommand{\linkedInUserName}{harsh-kumar-a7b98198}
+
+% % An alternate profile section 
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\href{https://harshcurious.com/}{\yourName}} \\ \vspace{1pt}
+    \small \href{mailto:eharshkmr@gmail.com}{\underline{eharshkmr@gmail.com}}  $|$  +91 886 039 4423 $|$ 
+    \href{https://www.linkedin.com/in/harsh-kumar-a7b98198}{{\color[HTML]{458588}\faLinkedin} \underline{harsh-kumar-a7b98198}} $|$
+    \href{https://github.com/harshcurious}{{\color[HTML]{458588}\faGithub} \underline{harshcurious}} $|$
+    \href{https://harshcurious.com/}{\underline{Website: harshcurious.com}}
+\end{center}
+
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+	\singleItem{Languages:}{Python, C, Go}
+	\\
+	\singleItem{ML Libraries:}{Pandas, Numpy, scikit-learn, XgBoost, fbprophet, TBATS, statsmodels, PyTorch, Keras, TensorFlow, Transformers}
+	\\
+	\singleItem{Data Technologies:}{PostgresSQL, MySQL, Snowflake, MongoDB, PySpark, Polars}
+	\\
+	\singleItem{Cloud Technologies:}{AWS Sagemaker, S3, EC2, Step Funtions, Lambda Functions}
+	\\
+	\singleItem{Development Tools:}{Git, Docker, Kubernetes, Jenkins, Github Actions, Bash, PowerShell}
+	\\
+	\singleItem{Others:}{HTML/CSS, Jira, Confluence, \LaTeX, Markdown}
+\end{skillList}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Data Scientist}{Zestmoney}{Bangaluru, KA, IN}{Feb 2022 – Current}
+\begin{itemize}
+	\item \runsubsubsection{Volume Projection}
+	\begin{bullets}
+	    \item Designed a statistical time series using that improved the daily call volume prediction by $400\%$.
+	    \item Iterations included algorithms like ARIMA, SARIMA, fbprophet, and TBATS.
+	    \item Coordinated with the customer relations team to optimize the employee work hour allotment resulting in increased customer satisfaction rate.\\
+    \end{bullets}
+	\item \runsubsubsection{EMI Estimation}
+	\begin{bullets}
+		\item Performed data cleaning and segmentation on a large dataset to get a better estimate of EMI obligation for our customers.
+		\item Researched market data to improve the data quality.
+	\end{bullets}
+	\item \runsubsubsection{Fraud Likelihood Estimation}
+	\begin{bullets}
+		\item Performed extensive experimentation to produce a new fraud detection model.
+		\item Improved the previous performance by approximately 20\%.
+		\item Wrote the production code to calculate the fraud likelihood in real time.
+	\end{bullets}
+	\item \runsubsubsection{Model Monitoring}
+	\begin{bullets}
+		\item Helped create the model monitoring framework for all the deployed model at Zestmoney.
+		\item Produced data visualization to help other teams to track model performance.	
+	\end{bullets}
+	\item \runsubsubsection{Collections Models}
+	\begin{bullets}
+		\item Took ownership of multiple models used to optimize collections. Created detailed workflows to manage loan collection strategies.
+		\item Used the model monitoring data to proactively improve the model performance.
+	\end{bullets}
+	\item \runsubsubsection{AutoML}
+	\begin{bullets}
+		\item Helped in building of an internal ML platform for automatic modelling of internal financial data.
+		\item Helped build the ELT pipeline in Polars for feature building which improved the latency by 40\%.
+	\end{bullets}
+\end{itemize}
+\sectionsep
+
+\resumeHeading{Teaching Assistant (TA)}{University of Missouri-Columbia}{Columbia, MO, US}{Aug 2018 - Dec 2019}
+\begin{bullets}
+    \item Taught problem solving skills to pre-calculus and calculus I students.
+    \item Performed one-on-one mentoring with students during office hours.
+\end{bullets}
+\sectionsep
+
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading{B.S. in Mathematics and Scientific computing}{Indian Institute of Technology Kanpur (IIT Kanpur)}{Kanpur, India}{Jul 2012 — Jun 2016}{GPA 8.4} \\
+% \courseWork{Fundamentals of Computing; Data Structures and Algorithms; Probability and Statistics;  Mathematical Logic; Principles of Numerical Computation; Theory of Computation; Abstract Algebra; Organizational and Administrative Psychology; Introduction to Universal Algebra; Erg\"odic Theory; Fourier Analysis}
+\courseWork{Fundamentals of Computing; Data Structures and Algorithms; Probability and Statistics;  Mathematical Logic; Principles of Numerical Computation; Theory of Computation}\\
+\vspace{2mm}
+\educationHeading{M.S. in Mathematics and Scientific computing}{Indian Institute of Technology Kanpur (IIT Kanpur)}{Kanpur, India}{Jul 2016 — Jun 2017}{GPA 9.1} \\
+\vspace{2mm}
+%\educationHeading{Graduate work in Mathematics}{University of Missouri, Columbia}{Columbia, USA}{Sep 2017 — Jan 2020}{GPA 3.9/4.0}\\
+%% \courseWork{Topics in Applied Math: Theory of Wavelets; Harmonic Analysis I; Harmonic Analysis II; Analysis Seminar}
+%\teacherAssistant{Pre-Calculus, Calculus-I}
+
+\sectionsep
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+%\section{Projects}
+%
+%\projectHeading{Transport prediction for resource allocation}{}{Python, Pandas, Numpy, NLP, Big Data}
+%\begin{bullets}
+%    \item Implemented neural network architectures without the use of pre-existing machine learning libraries.
+%    \item Utilized bike usage data to find an optimal bike allocation strategy based on local weather conditions.
+%\end{bullets}
+%\sectionsep
+
+% \projectHeading{Built Personal Website}{https://harshcurious.com/}{Go, HTML, CSS}
+% \begin{bullets}
+%     \item Built a personal website consisting of an SEO optimized landing page and blog posts.
+%     \item Wrote over 30 blog posts on technical topics.
+%     \item Published the static website using Github pages and Google DNS server.
+% \end{bullets}
+% \sectionsep
+
+% \projectHeading{Number of real roots of a system of polynomial equations}{https://github.com/harshcurious/Number-of-real-roots}{Singular}
+% \begin{bullets}
+%     \item Result of the Summer Research Fellowship of the Indian Academy of Sciences in summer of 2014.
+%     \item Worked with Prof. Jugal K Verma at IIT-B to study a theorem to compute the number of real roots of set of polynomial equations given by P. Pederson, M. F. Roy and A. Szpirglas.
+%     \item Used Singular (a computer algebra system) to calculate these roots for some example cases.
+% \end{bullets} 
+% \sectionsep
+
+% \projectHeadingNoLink{Probability theory and Markov chains}{}{}
+% \begin{bullets}
+%     \item Studied probability theory under the guidance of Prof. Amites Dasgupta at ISI Kolkata in summer of 2015.
+%     \item Applied the theory to understand the probabilistic proofs in number theory.
+%     \item Studied Brownian motion and its application to graph theory.
+% \end{bullets}
+% \sectionsep
+
+% \projectHeadingNoLink{$\epsilon$-Kronecker sets}{}
+% \begin{bullets}
+%     \item Studied the $\epsilon$-Kronecker sets under the supervision of Prof. Kathryn Hare of University of Waterloo.
+%     \item Researched ways to improve the Kronecker constant of the union of two $\epsilon$-Kronecker sets.
+% \end{bullets}
+% \sectionsep
+
+% \newpage
+
+% \projectHeadingNoLink{Peter-Weyl Theorem}{}
+% \begin{bullets}
+%     \item Worked with Prof. Radhika Ganpati as part of Visiting Student Research Project 2016 at TIFR, Mumbai.
+%     \item Studied the Peter-Weyl theorem for compact groups, and the theory of finite group representation.
+% \end{bullets}
+% \sectionsep
+
+%\projectHeadingtwo{Martingale Theory}{https://github.com/harshcurious/LaTeX-sample/blob/main/document.pdf}
+%
+%\begin{bullets}
+%    \item Worked under the supervision of  Prof. Sudipta Dutta at IIT-Kanpur as part of my masters project.
+%    \item Studied advanced probability theory using martingales. 
+%    \item Focused on martingale convergence theorems and Brownian motion with a view towards generalizing them for Banach valued martingales.
+%    % \item Studied the  in various spaces through the use of Martingale theory.
+%\end{bullets}
+\sectionsep
+
+
+
+% %--------------------------------------------------------------
+% %     Courses
+% %--------------------------------------------------------------
+% \section{Relevant Courses}
+% \begin{skillList}
+%     \singleItem{Fundamentals of Computing}{An introduction to programming in C}
+%     \\
+%     \singleItem{Abstract Algebra}{}
+%     \\
+%     \singleItem{}{}
+%     \\
+%     \singleItem{Mathematical Logic}{}
+%     \\
+%     \singleItem{Data Structure and Algorithms}{}
+%     \\
+%     \singleItem{}{}
+%     \\
+%     \singleItem{Principles of Numerical Computation}{}
+%     \\
+%     \singleItem{Organizational and Administrative Psychology}{}
+%     \\
+%     \singleItem{Theory of Computation}{}
+%     \\
+%     \singleItem{Topics in Applied Mathematics}{}
+% \end{skillList}
+
+% %--------------------------------------------------------------
+% %     Achievements
+% %--------------------------------------------------------------
+%\section{Achivements}
+%\vspace{5pt}
+%\begin{bullets}
+%%    \item Qualified for participation in the Indian National Mathematical Olympiad 2011 through the Regional Mathematics Olympiad 2011, Rajasthan Region.
+%%    \item Awarded the joint Summer Research Fellowship, 2014 by the Indian Academy of Sciences (IAS), the Indian National Science Academy (INSA) and the National Academy of Sciences, India (NASI) for doing project work in the summer.
+%    \item Selected for the Visiting Student Research Project 2016 at TIFR, Mumbai.
+%    \item Awarded the Proficiency Medal at the convocation 2017 at IIT Kanpur.
+%    \item Awarded the Lee \& Cozette McFarlan scholarship for the Academic year of 2017-18 at University of Missouri-Columbia.
+%    
+%\end{bullets}
+
+\end{document}
