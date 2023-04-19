@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.17)  18 APR 2023 00:54
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.17)  19 APR 2023 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,25 +906,39 @@ LaTeX Font Warning: Font shape `TU/Lato-Light(0)/m/sc' undefined
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 72.
+! Missing } inserted.
+<inserted text> 
+                }
+l.75 ...yTorch, Keras,\\ TensorFlow, Transformers}
+                                                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten \endgroup.
+\singleItem #1#2->\normalsize {\textbf {#1} #2}
+                                               
+l.75 ...yTorch, Keras,\\ TensorFlow, Transformers}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 [1
 
 ] (./HarshIITK-resume.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `HarshIITK-resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `HarshIITK-resume.out':
-(rerunfilecheck)             Before: 66F643D7F3C5E9F9DE3316DAF18DEC9C;380
-(rerunfilecheck)             After:  5BE67D575E3E8ED64DF95C749024C1E4;282.
+Package rerunfilecheck Info: File `HarshIITK-resume.out' has not changed.
+(rerunfilecheck)             Checksum: 5BE67D575E3E8ED64DF95C749024C1E4;282.
  ) 
 Here is how much of TeX's memory you used:
  18582 strings out of 476683
  345711 string characters out of 5809790
- 1868018 words of memory out of 5000000
+ 1869018 words of memory out of 5000000
  38522 multiletter control sequences out of 15000+600000
  515150 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
