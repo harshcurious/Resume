@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.17)  26 APR 2023 18:14
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.17)  26 APR 2023 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,11 +936,11 @@ Package rerunfilecheck Info: File `HarshIITK-resume.out' has not changed.
 (rerunfilecheck)             Checksum: 5BE67D575E3E8ED64DF95C749024C1E4;282.
  ) 
 Here is how much of TeX's memory you used:
- 18582 strings out of 476683
- 345711 string characters out of 5809790
+ 18580 strings out of 476683
+ 345600 string characters out of 5809790
  1872018 words of memory out of 5000000
- 38522 multiletter control sequences out of 15000+600000
- 515150 words of font info for 124 fonts, out of 8000000 for 9000
+ 38521 multiletter control sequences out of 15000+600000
+ 515142 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  115i,11n,148p,340b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
 
