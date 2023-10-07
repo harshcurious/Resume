@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.17)  26 APR 2023 20:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.9.18)  7 OCT 2023 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -28,7 +28,7 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count189
 \U@D=\dimen141
-\l@unhyphenated=\language87
+\l@unhyphenated=\language3
 
 (/usr/share/texmf-dist/tex/generic/babel/xebabel.def)
 \bbl@readstream=\read2
@@ -36,12 +36,16 @@ Package: babel 2023/02/13 3.86 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language21). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 ))
 (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
@@ -906,26 +910,6 @@ LaTeX Font Warning: Font shape `TU/Lato-Light(0)/m/sc' undefined
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 72.
-! Missing } inserted.
-<inserted text> 
-                }
-l.75 ...yTorch, Keras,\\ TensorFlow, Transformers}
-                                                  
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Extra }, or forgotten \endgroup.
-\singleItem #1#2->\normalsize {\textbf {#1} #2}
-                                               
-l.75 ...yTorch, Keras,\\ TensorFlow, Transformers}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 [1
 
 ] (./HarshIITK-resume.aux)
@@ -936,12 +920,12 @@ Package rerunfilecheck Info: File `HarshIITK-resume.out' has not changed.
 (rerunfilecheck)             Checksum: 5BE67D575E3E8ED64DF95C749024C1E4;282.
  ) 
 Here is how much of TeX's memory you used:
- 18580 strings out of 476683
- 345600 string characters out of 5809790
- 1872018 words of memory out of 5000000
- 38521 multiletter control sequences out of 15000+600000
+ 18582 strings out of 478682
+ 345620 string characters out of 5849665
+ 1874018 words of memory out of 5000000
+ 38390 multiletter control sequences out of 15000+600000
  515142 words of font info for 123 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 115i,11n,148p,340b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 115i,11n,148p,340b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on HarshIITK-resume.pdf (1 page).

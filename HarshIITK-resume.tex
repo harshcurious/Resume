@@ -72,13 +72,15 @@
 \begin{skillList}
 	\singleItem{Languages:}{Python, C, Go}
 	\\
-	\singleItem{ML Libraries:}{Pandas, Numpy, scikit-learn, XGBoost, fbprophet, TBATS, statsmodels, SHAP, NLTK, spaCy, PyTorch, Keras,\\ TensorFlow, Transformers}
+	\singleItem{ML Libraries:}{Pandas, Numpy, scikit-learn, XGBoost, fbprophet, TBATS, statsmodels, SHAP, NLTK, spaCy, PyTorch, Transformers}
 	\\
-	\singleItem{Data Technologies:}{PostgresSQL, MySQL, Snowflake, MongoDB, PySpark, Polars}
+	\singleItem{Data Technologies:}{PostgresSQL, MySQL, Snowflake, MongoDB, PySpark, Polars, Metabase, Selenium}
 	\\
 	\singleItem{Cloud Technologies:}{AWS Sagemaker, S3, EC2, Step Funtions, Lambda Functions}
 	\\
 	\singleItem{Development Tools:}{Git, Docker, Kubernetes, Jenkins, Github Actions, Bash, PowerShell}
+%	\\
+%	\singleItem{Development Tools:}{Git, Docker, Kubernetes, Jenkins, Github Actions, Bash, PowerShell, AWS Sagemaker, S3, EC2, Step Funtions}
 	\\
 	\singleItem{Others:}{HTML/CSS, Jira, Confluence, \LaTeX, Markdown}
 \end{skillList}
@@ -88,29 +90,47 @@
 %     Experience
 %--------------------------------------------------------------
 \section{Work Experience}
-\resumeHeading{Data Scientist}{Zestmoney}{Bangaluru, KA, IN}{2022 – Current}
+\resumeHeading{Data Scientist}{Ohm Mobility}{Bengalru}{2023 – Curent}
 \begin{itemize}
+	\item \runsubsubsection{Sales Database}
+	\begin{bullets}
+		\item Designed an electric vehicle sales databaase from scratch which was used for all subsequent business decisions.
+		\item Developed a data-mining script to fetch data from public VAHAN dashboard using Selenium.
+		\item Created a data model to store the data in postgresql and built dashboards using Metabase.\\
+	\end{bullets}
+%\begin{itemize}
+	\item \runsubsubsection{IoT Dashboard}
+	\begin{bullets}
+		\item Integrated daily IoT data of electronic vehicles from multilple sources and created dashboards to generate visibility.
+		\item Generated financial insights based on the usage pattern of the vehicles
+	\end{bullets}
+%\end{itemize}
+	
+%\endd{itemize}
+\resumeHeading{Data Scientist}{Zestmoney}{Bengaluru, KA, IN}{2022 – 2023}
+%\begin{itemize}
 	\item \runsubsubsection{Volume projection of calls, emails and chats for workforce management}
 	\begin{bullets}
-	    \item Designed a statistical time series using that reduced error in the daily call volume prediction from an average of 40\% to 15\%.
-	    \item This resulted in decrease in the call disconnect rate from over 50\% to under 20\% during peak hours.
-	    \item Experimented with algorithms like ARIMA, SARIMA, fbprophet, and TBATS.
-	    \item Coordinated with the customer relations team to optimize the employee work hour allotment resulting in increased customer satisfaction rate.\\
+%	    \item Designed a statistical time series using that reduced error in the daily call volume prediction from an average of 40\% to 15\%.
+%	    \item This resulted in decrease in the call disconnect rate from over 50\% to under 20\% during peak hours.
+	    \item Designed a statistical time series using that reduced call disconnect rate from over 50\% to under 20\% during peak hours.
+	    \item Experimented with algorithms like ARIMA, SARIMA, fbprophet, and TBATS to account for multiple seasonality in data.\\
+%	    \item Coordinated with the customer relations team to optimize the employee work hour allotment resulting in increased customer satisfaction rate.\\
     \end{bullets}
 
 	\item \runsubsubsection{Fraud likelihood estimation to reduce credit risk}
 	\begin{bullets}
-		\item Experimented with over 2000 features from 8 different data sources to produce a new fraud detection model.
-		\item Improved the previous performance by approximately 20\%.
-		\item Created a new segmentation of customers based on online vs instore onboarding.
+		\item Experimented with over 2000 features from 8 different data sources to produce an updated fraud detection model improving performance by upto 20%
+%		\item Improved the previous performance by approximately 20\%.
+		\item Created a new insight of segregating the customer base based on online vs in-store onboarding.
 		\item Created a service API aggregating 8 different data sources with a latency of 200-400ms.
-		\item Introduced SHAP feature importance for model assessment to the data science and risk analysis teams.
+%		\item Introduced SHAP feature importance for model assessment to the data science and risk analysis teams.
 	\end{bullets}
 
 	\item \runsubsubsection{Affordability Estimation from Cibil data}
 	\begin{bullets}
 		\item Performed data cleaning and segmentation on the CIBIL data of a large population set to get a better estimate of EMI obligation for the customers.
-		\item Performed extensive market research to improve the data quality.		
+%		\item Performed extensive market research to improve the data quality.		
 		\item Improved the EMI prediction of Gold Loans by over 10\%.
 	\end{bullets}
 
@@ -137,8 +157,7 @@
 
 \resumeHeading{Teaching Assistant (TA)}{University of Missouri-Columbia}{Columbia, MO, US}{Aug 2018 - Dec 2019}
 \begin{bullets}
-    \item Taught problem solving skills to over 100 pre-calculus and calculus I students.
-    \item Performed one-on-one mentoring with students during office hours.
+    \item Taught problem solving skills to over 100 pre-calculus and calculus-I students including on-one mentoring.
 \end{bullets}
 \sectionsep
 
