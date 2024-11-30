@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.7.12)  30 NOV 2024 20:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.30)  30 NOV 2024 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,7 +913,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 72.
 [1
 
-] [2] (./HarshIITK-resume.aux)
+] (./HarshIITK-resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -927,11 +927,11 @@ Package rerunfilecheck Info: File `HarshIITK-resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18851 strings out of 476772
- 347329 string characters out of 5803394
- 1951839 words of memory out of 5000000
+ 347329 string characters out of 5803393
+ 1947839 words of memory out of 5000000
  40570 multiletter control sequences out of 15000+600000
  560924 words of font info for 127 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,11n,149p,340b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,11n,149p,340b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HarshIITK-resume.pdf (2 pages).
+Output written on HarshIITK-resume.pdf (1 page).
