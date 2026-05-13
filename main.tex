@@ -1,7 +1,7 @@
 \documentclass[10pt, letterpaper]{article}
 
 % Packages for formatting
-\usepackage[left=0.6in, right=0.6in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -11,9 +11,8 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,
     urlcolor=blue,
-    pdftitle={Harsh Kumar - Resume},
+    pdftitle={Harsh Kumar - Senior Data Scientist (Tilt/NIRA)},
 }
 
 % Formatting sections
@@ -21,63 +20,61 @@
 \titlespacing{\section}{0pt}{1.5ex}{1ex}
 
 \begin{document}
-
-% Disable page numbers
 \pagestyle{empty}
 
 % --- HEADER ---
 \begin{center}
-    {\Huge \textbf{Harsh Kumar}} \\[1.5ex]
-    \href{mailto:eharshkmr@gmail.com}{eharshkmr@gmail.com} \textbar{} +91 886039 4423 \textbar{} \href{https://linkedin.com/in/harsh-kumar-a7b98198}{LinkedIn} \\[0.5ex]
-    \href{https://harshcurious.com}{harshcurious.com} \textbar{} \href{https://github.com/harshcurious}{github.com/harshcurious}
+    {\Huge \textbf{Harsh Kumar}} \\[1.2ex]
+    \href{mailto:eharshkmr@gmail.com}{eharshkmr@gmail.com} \textbar{} +91 886039 4423 \textbar{} \href{https://linkedin.com/in/harsh-kumar-a7b98198}{LinkedIn} \textbar{} \href{https://harshcurious.com}{harshcurious.com}
 \end{center}
 
 % --- SUMMARY ---
 \section*{Professional Summary}
-\textbf{Decision Scientist \& ML Engineer} with an \textbf{M.S. from IIT Kanpur} and 4+ years of experience building high-impact models for \textbf{massive-scale} e-commerce and fintech environments. Expert in developing \textbf{real-time risk engines} and \textbf{forecasting systems} managing \textbf{\$100M+ in annual volume}. Proven track record in transitioning complex research into \textbf{low-latency (200-400ms)} production code using \textbf{Databricks, PySpark, and Airflow}. Specialized in end-to-end ML lifecycles and automated \textbf{CI/CD} orchestration.
+\textbf{Senior Data Scientist} with 4+ years of expertise in the \textbf{Indian and US fintech domain}, specializing in end-to-end credit lifecycle (decisioning, pricing, and collections) and fraud risk modeling. Proven track record at \textbf{ONE} and \textbf{ZestMoney} building real-time risk engines that manage \textbf{\$100M+ in annual volume} using alternative data signals. Expert in transitioning research into production via \textbf{Databricks} and \textbf{PySpark}, with a forward-thinking approach to \textbf{AI-augmented development} and cross-border collaboration in \textbf{distributed international teams}.
 
 % --- SKILLS ---
 \section*{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \item \textbf{ML \& AI:} XGBoost, LightGBM, Transformers, PyTorch, \textbf{Time series forecasting (fbprophet)}, Reinforcement Learning, Optuna, SHAP, Scikit-learn, LangChain, Langgraph, Pydantic AI.
-    \item \textbf{Data \& Infrastructure:} \textbf{Databricks}, \textbf{PySpark}, \textbf{Airflow}, \textbf{GitLab CI/CD}, BentoML, MLFlow, Docker, Kubernetes, DynamoDB, Postgres, Snowflake, AWS SageMaker.
-    \item \textbf{Languages:} Python (Expert), C, Go, SQL.
+    \item \textbf{Lending Expertise:} Credit Risk Scoring (PD/LGD), Behavioral Modeling, Collections Prioritization, Propensity Scoring, Alternative Data (Bank Statement Analysis), A/B Testing, PSI/CSI Monitoring.
+    \item \textbf{Machine Learning:} XGBoost, LightGBM, fbprophet, SHAP, Optuna, Spark MLlib, Scikit-learn, PyTorch, Langchain, Tensorflow, Transformers, Hugging Face, Unsloth.
+    \item \textbf{Data \& Infrastructure:} Databricks Lakehouse, Snowflake, PySpark, Polars, DynamoDB, SQL, Airflow, GitLab CI/CD, GitHub Actions.
+    \item \textbf{AI-Augmented Development:} Expert user of \textbf{Cursor}, \textbf{Claude Code}, \textbf{Codex}, \textbf{Opencode}, and various platform-specific tools for accelerated software engineering and ML prototyping.
 \end{itemize}
 
 % --- WORK EXPERIENCE ---
 \section*{Work Experience}
 
 \noindent
-\textbf{DECISION SCIENTIST | ONE} \hfill \textbf{Bengaluru, India | 2024 -- 2026}
+\textbf{DECISION SCIENTIST \textbar{} ONE} \hfill \textbf{Bengaluru (Distributed/US-Remote) \textbar{} 2024 -- 2026}
 \begin{itemize}[leftmargin=0.25in, itemsep=1pt]
-    \item \textbf{Real-Time Transaction Systems:} Architected a hybrid pipeline utilizing \textbf{DynamoDB} for sub-second retrieval of features, optimizing \textbf{latency} for real-time risk assessment at scale.
-    \item \textbf{Scalable ML Infrastructure:} Standardized organization-wide ML deployment using \textbf{GitLab CI/CD} and \textbf{Airflow} DAGs within \textbf{Databricks}, automating re-training and monitoring (PSI/CSI).
-    \item \textbf{High-Scale Feature Engineering:} Built a \textbf{PySpark} library with 2,000+ signals, handling massive datasets to improve default risk estimation (XGBoost).
-    \item \textbf{Credit Risk Modeling:} Designed models managing 2M+ transactions (\$100M+ volume), maintaining default rates below industry standards and maximizing product profitability.
+    \item \textbf{Overdraft Risk Scoring:} Developed calibrated \textbf{XGBoost} probability scorecards to estimate default likelihood for overdraft products; achieved a \textbf{20\% fraud reduction} while maintaining stable approval rates.
+    \item \textbf{Cash Advance Scaling:} Architected a credit risk model managing \textbf{\$100M+ in annual transaction volume} for 1M+ customers; maintained default rates below industry standards and established the model as the company's most profitable product.
+    \item \textbf{Real-Time Data Engineering:} Built a high-scale feature library of \textbf{2,000+ transaction signals} using \textbf{PySpark} and architected a low-latency hybrid pipeline (\textbf{DynamoDB} + \textbf{Databricks}) to support millisecond-level risk decisions.
+    \item \textbf{Global MLOps \& Collaboration:} Standardized organization-wide MLOps workflows using \textbf{GitLab CI/CD} and \textbf{Airflow}, facilitating seamless deployment cycles and breaking information silos across distributed international time zones.
 \end{itemize}
 
 \vspace{1ex}
 
 \noindent
-\textbf{DATA SCIENTIST | ZESTMONEY} \hfill \textbf{Bengaluru, KA, IN | 2022 -- 2023}
+\textbf{DATA SCIENTIST \textbar{} ZESTMONEY} \hfill \textbf{Bengaluru, India \textbar{} 2022 -- 2023}
 \begin{itemize}[leftmargin=0.25in, itemsep=1pt]
-    \item \textbf{Demand Forecasting:} Designed a statistical time-series forecasting engine (\textbf{fbprophet}) to optimize workforce management, reducing peak-hour disconnect rates from 50\% to $<$20\%.
-    \item \textbf{Model Serving \& Latency:} Deployed real-time classification APIs via \textbf{BentoML} with \textbf{200-400ms latency}, aggregating 2,000+ features from 8 disparate data sources.
-    \item \textbf{Propensity \& Growth:} Built a suite of \textbf{Spark-based XGBoost} models for product cross-sell, achieving up to \textbf{30\% uplift} in conversion across evolving product lines.
-    \item \textbf{ETL Optimization:} Improved pipeline efficiency by \textbf{40\%} by migrating legacy Pandas workflows to \textbf{Polars} for high-speed feature extraction.
+    \item \textbf{Collections \& Recovery Modeling:} Owned the development of collection prioritization models, optimizing loan recollection strategies and workflows to reduce delinquency rates in the India market.
+    \item \textbf{Risk-Based Propensity:} Built a suite of classification models for product cross-selling, achieving a \textbf{30\% conversion uplift} by identifying high-propensity, low-risk segments.
+    \item \textbf{Real-Time Model Serving:} Deployed production APIs via \textbf{BentoML} with \textbf{200-400ms latency}, integrating 8+ data sources for instant credit onboarding decisions.
+    \item \textbf{Performance Optimization:} Migrated 1,000+ feature pipelines from Pandas to \textbf{Polars}, improving ETL research latency by \textbf{40\%} and enabling faster iteration on experimental credit signals.
+    \item \textbf{Operations AI:} Designed a statistical forecasting engine (\textbf{fbprophet}) that reduced peak-hour call disconnects from \textbf{50\% to $<$20\%}, directly impacting customer support efficiency.
 \end{itemize}
 
 % --- EDUCATION ---
 \section*{Education}
 
 \noindent
-\textbf{M.S. in Mathematics and Scientific Computing} \hfill \textbf{IIT Kanpur} \\
-GPA: 9.1 \hfill \textbf{Jul 2016 -- Jun 2017}
+\textbf{M.S. in Mathematics and Scientific Computing} \hfill \textbf{IIT Kanpur \textbar{} GPA: 9.1} \\
+\textit{Relevant Coursework: Advanced Statistical Inference, Machine Learning, Stochastic Processes.}
 
 \vspace{1ex}
 
 \noindent
-\textbf{B.S. in Mathematics and Scientific Computing} \hfill \textbf{IIT Kanpur} \\
-GPA: 8.4 \hfill \textbf{Jul 2012 -- Jun 2016}
+\textbf{B.S. in Mathematics and Scientific Computing} \hfill \textbf{IIT Kanpur \textbar{} GPA: 8.4}
 
 \end{document}
